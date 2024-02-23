@@ -1,6 +1,6 @@
 ## Codecept Api with Data management
 
-Repositório dedicado aos testes utilizando o framework de automação Codecept js para testes api rest com a bibliotecamente de geração de massas
+Repositório dedicado aos testes utilizando o framework de automação Codecept js para testes api rest com a biblioteca de geração de massas
 
 ## Instalar nvm:
 Necessário para poder mudar a versão do Node para a usada no projeto
