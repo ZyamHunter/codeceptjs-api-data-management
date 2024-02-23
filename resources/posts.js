@@ -1,8 +1,3 @@
 module.exports = {
-    posts_data: [
-        'userId',
-        'id',
-        'title',
-        'body'
-    ]
+  posts_data: ['userId', 'id', 'title', 'body'],
 };

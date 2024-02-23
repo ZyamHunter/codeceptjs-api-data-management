@@ -15,24 +15,24 @@ exports.config = {
       endpoint: 'https://jsonplaceholder.typicode.com/',
       defaultHeaders: {
         // use Bearer Authorization
-        'Authorization': 'Bearer 11111',
+        Authorization: 'Bearer 11111',
         'Content-Type': 'application/json',
-        'Accept': 'application/json',
+        Accept: 'application/json',
       },
       prettyPrintJson: true,
       onRequest: (request) => {
         request.headers.auth = '123';
-      }
+      },
     },
-    JSONResponse: {}
+    JSONResponse: {},
   },
   include: {
-    I: './steps_file.js'
+    I: './steps_file.js',
   },
   plugins: {
     fakerTransform: {
-      enabled: true
-    }
- },
-  name: 'api-codeceptjs'
-}
+      enabled: true,
+    },
+  },
+  name: 'api-codeceptjs',
+};
