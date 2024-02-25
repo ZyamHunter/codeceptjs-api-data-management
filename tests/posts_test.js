@@ -101,14 +101,16 @@ Scenario('test Factory Game', () => {
 });
 
 Scenario('test library Faker', () => {
-  const animal = fakerPT_BR.animal.cat;
-  const jobDescriptor = fakerPT_BR.person.jobDescriptor;
-  const personFullName = fakerPT_BR.person.fullName;
-  const phoneNumber = fakerPT_BR.phone.number;
-  const buildingNumber = fakerPT_BR.location.buildingNumber;
-  const city = fakerPT_BR.location.city;
-  const countryCode = fakerPT_BR.location.countryCode;
-  const zipCode = fakerPT_BR.location.zipCode;
+  const animal = fakerPT_BR.animal.cat();
+  const jobDescriptor = fakerPT_BR.person.jobDescriptor();
+  const personFullName = fakerPT_BR.person.fullName();
+  const phoneNumber = fakerPT_BR.phone.number();
+  const buildingNumber = fakerPT_BR.location.buildingNumber();
+  const city = fakerPT_BR.location.city();
+  const countryCode = fakerPT_BR.location.countryCode();
+  const zipCode = fakerPT_BR.location.zipCode();
+
+  console.log(animal, jobDescriptor, personFullName, phoneNumber, buildingNumber, city, countryCode, zipCode)
 });
 
 Scenario('Get Posts', async ({ I }) => {
